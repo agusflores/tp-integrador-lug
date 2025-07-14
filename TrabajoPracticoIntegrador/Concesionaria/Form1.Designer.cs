@@ -68,6 +68,24 @@
             dateTimePicker1 = new DateTimePicker();
             textBox1 = new TextBox();
             btnRealizarVenta = new Button();
+            label16 = new Label();
+            txtIDModificarVehiculo = new TextBox();
+            txtIDEliminarVehiculo = new TextBox();
+            label17 = new Label();
+            btnMostrarDatosVehiculo = new Button();
+            btnModificarVehiculo = new Button();
+            btnEliminarVehiculo = new Button();
+            label18 = new Label();
+            label22 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            btnEliminarCliente = new Button();
+            btnModificarCliente = new Button();
+            btnMostrarDatosCliente = new Button();
+            txtIDEliminarCliente = new TextBox();
+            label21 = new Label();
+            txtIDModificarCliente = new TextBox();
+            label23 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvVehiculos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvVentas).BeginInit();
@@ -85,7 +103,7 @@
             // lblTituloCliente
             // 
             lblTituloCliente.AutoSize = true;
-            lblTituloCliente.Location = new Point(648, 247);
+            lblTituloCliente.Location = new Point(656, 247);
             lblTituloCliente.Name = "lblTituloCliente";
             lblTituloCliente.Size = new Size(110, 15);
             lblTituloCliente.TabIndex = 1;
@@ -94,7 +112,7 @@
             // lblTituloVentas
             // 
             lblTituloVentas.AutoSize = true;
-            lblTituloVentas.Location = new Point(648, 449);
+            lblTituloVentas.Location = new Point(656, 449);
             lblTituloVentas.Name = "lblTituloVentas";
             lblTituloVentas.Size = new Size(95, 15);
             lblTituloVentas.TabIndex = 2;
@@ -105,7 +123,7 @@
             dgvClientes.AllowUserToAddRows = false;
             dgvClientes.AllowUserToDeleteRows = false;
             dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClientes.Location = new Point(648, 265);
+            dgvClientes.Location = new Point(656, 265);
             dgvClientes.Name = "dgvClientes";
             dgvClientes.ReadOnly = true;
             dgvClientes.Size = new Size(465, 171);
@@ -127,7 +145,7 @@
             dgvVentas.AllowUserToAddRows = false;
             dgvVentas.AllowUserToDeleteRows = false;
             dgvVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvVentas.Location = new Point(648, 467);
+            dgvVentas.Location = new Point(656, 467);
             dgvVentas.Name = "dgvVentas";
             dgvVentas.ReadOnly = true;
             dgvVentas.Size = new Size(465, 182);
@@ -198,9 +216,9 @@
             // 
             // btnAgregarVehiculo
             // 
-            btnAgregarVehiculo.Location = new Point(130, 218);
+            btnAgregarVehiculo.Location = new Point(11, 207);
             btnAgregarVehiculo.Name = "btnAgregarVehiculo";
-            btnAgregarVehiculo.Size = new Size(126, 23);
+            btnAgregarVehiculo.Size = new Size(245, 23);
             btnAgregarVehiculo.TabIndex = 13;
             btnAgregarVehiculo.Text = "Agregar Vehiculo";
             btnAgregarVehiculo.UseVisualStyleBackColor = true;
@@ -249,44 +267,44 @@
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(761, 148);
+            textBox8.Location = new Point(769, 148);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(100, 23);
             textBox8.TabIndex = 32;
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(761, 119);
+            textBox9.Location = new Point(769, 119);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(100, 23);
             textBox9.TabIndex = 31;
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(761, 90);
+            textBox10.Location = new Point(769, 90);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(100, 23);
             textBox10.TabIndex = 30;
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(761, 61);
+            textBox11.Location = new Point(769, 61);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(100, 23);
             textBox11.TabIndex = 29;
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(761, 32);
+            textBox12.Location = new Point(769, 32);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(100, 23);
             textBox12.TabIndex = 28;
             // 
             // btnRegistrarCliente
             // 
-            btnRegistrarCliente.Location = new Point(735, 182);
+            btnRegistrarCliente.Location = new Point(624, 182);
             btnRegistrarCliente.Name = "btnRegistrarCliente";
-            btnRegistrarCliente.Size = new Size(126, 23);
+            btnRegistrarCliente.Size = new Size(245, 23);
             btnRegistrarCliente.TabIndex = 27;
             btnRegistrarCliente.Text = "Registrar cliente";
             btnRegistrarCliente.UseVisualStyleBackColor = true;
@@ -294,7 +312,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(617, 151);
+            label8.Location = new Point(625, 151);
             label8.Name = "label8";
             label8.Size = new Size(42, 15);
             label8.TabIndex = 25;
@@ -303,7 +321,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(617, 122);
+            label9.Location = new Point(625, 122);
             label9.Name = "label9";
             label9.Size = new Size(59, 15);
             label9.TabIndex = 24;
@@ -312,7 +330,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(617, 93);
+            label10.Location = new Point(625, 93);
             label10.Name = "label10";
             label10.Size = new Size(33, 15);
             label10.TabIndex = 23;
@@ -321,7 +339,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(616, 64);
+            label11.Location = new Point(624, 64);
             label11.Name = "label11";
             label11.Size = new Size(57, 15);
             label11.TabIndex = 22;
@@ -330,7 +348,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(616, 40);
+            label12.Location = new Point(624, 40);
             label12.Name = "label12";
             label12.Size = new Size(54, 15);
             label12.TabIndex = 21;
@@ -339,7 +357,7 @@
             // lblAgregarCliente
             // 
             lblAgregarCliente.AutoSize = true;
-            lblAgregarCliente.Location = new Point(616, 9);
+            lblAgregarCliente.Location = new Point(624, 9);
             lblAgregarCliente.Name = "lblAgregarCliente";
             lblAgregarCliente.Size = new Size(127, 15);
             lblAgregarCliente.TabIndex = 20;
@@ -405,18 +423,190 @@
             // 
             // btnRealizarVenta
             // 
-            btnRealizarVenta.Location = new Point(260, 627);
+            btnRealizarVenta.Location = new Point(11, 627);
             btnRealizarVenta.Name = "btnRealizarVenta";
-            btnRealizarVenta.Size = new Size(126, 23);
+            btnRealizarVenta.Size = new Size(375, 23);
             btnRealizarVenta.TabIndex = 40;
             btnRealizarVenta.Text = "Realizar venta";
             btnRealizarVenta.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(262, 40);
+            label16.Name = "label16";
+            label16.Size = new Size(185, 15);
+            label16.TabIndex = 41;
+            label16.Text = "Ingrese ID del vehiculo que desea:";
+            // 
+            // txtIDModificarVehiculo
+            // 
+            txtIDModificarVehiculo.Location = new Point(326, 61);
+            txtIDModificarVehiculo.Name = "txtIDModificarVehiculo";
+            txtIDModificarVehiculo.Size = new Size(100, 23);
+            txtIDModificarVehiculo.TabIndex = 42;
+            // 
+            // txtIDEliminarVehiculo
+            // 
+            txtIDEliminarVehiculo.Location = new Point(326, 122);
+            txtIDEliminarVehiculo.Name = "txtIDEliminarVehiculo";
+            txtIDEliminarVehiculo.Size = new Size(100, 23);
+            txtIDEliminarVehiculo.TabIndex = 44;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(262, 127);
+            label17.Name = "label17";
+            label17.Size = new Size(53, 15);
+            label17.TabIndex = 43;
+            label17.Text = "Eliminar:";
+            // 
+            // btnMostrarDatosVehiculo
+            // 
+            btnMostrarDatosVehiculo.Location = new Point(432, 61);
+            btnMostrarDatosVehiculo.Name = "btnMostrarDatosVehiculo";
+            btnMostrarDatosVehiculo.Size = new Size(100, 23);
+            btnMostrarDatosVehiculo.TabIndex = 45;
+            btnMostrarDatosVehiculo.Text = "Mostrar datos";
+            btnMostrarDatosVehiculo.UseVisualStyleBackColor = true;
+            // 
+            // btnModificarVehiculo
+            // 
+            btnModificarVehiculo.Location = new Point(326, 93);
+            btnModificarVehiculo.Name = "btnModificarVehiculo";
+            btnModificarVehiculo.Size = new Size(100, 23);
+            btnModificarVehiculo.TabIndex = 46;
+            btnModificarVehiculo.Text = "Modificar";
+            btnModificarVehiculo.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminarVehiculo
+            // 
+            btnEliminarVehiculo.Location = new Point(326, 157);
+            btnEliminarVehiculo.Name = "btnEliminarVehiculo";
+            btnEliminarVehiculo.Size = new Size(100, 23);
+            btnEliminarVehiculo.TabIndex = 47;
+            btnEliminarVehiculo.Text = "Eliminar";
+            btnEliminarVehiculo.UseVisualStyleBackColor = true;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(373, 9);
+            label18.Name = "label18";
+            label18.Size = new Size(140, 15);
+            label18.TabIndex = 48;
+            label18.Text = "Acciones sobre vehiculos";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(262, 64);
+            label22.Name = "label22";
+            label22.Size = new Size(61, 15);
+            label22.TabIndex = 57;
+            label22.Text = "Modificar:";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(879, 69);
+            label19.Name = "label19";
+            label19.Size = new Size(61, 15);
+            label19.TabIndex = 66;
+            label19.Text = "Modificar:";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(953, 9);
+            label20.Name = "label20";
+            label20.Size = new Size(130, 15);
+            label20.TabIndex = 65;
+            label20.Text = "Acciones sobre clientes";
+            // 
+            // btnEliminarCliente
+            // 
+            btnEliminarCliente.Location = new Point(943, 157);
+            btnEliminarCliente.Name = "btnEliminarCliente";
+            btnEliminarCliente.Size = new Size(100, 23);
+            btnEliminarCliente.TabIndex = 64;
+            btnEliminarCliente.Text = "Eliminar";
+            btnEliminarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnModificarCliente
+            // 
+            btnModificarCliente.Location = new Point(946, 95);
+            btnModificarCliente.Name = "btnModificarCliente";
+            btnModificarCliente.Size = new Size(100, 23);
+            btnModificarCliente.TabIndex = 63;
+            btnModificarCliente.Text = "Modificar";
+            btnModificarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnMostrarDatosCliente
+            // 
+            btnMostrarDatosCliente.Location = new Point(1052, 65);
+            btnMostrarDatosCliente.Name = "btnMostrarDatosCliente";
+            btnMostrarDatosCliente.Size = new Size(100, 23);
+            btnMostrarDatosCliente.TabIndex = 62;
+            btnMostrarDatosCliente.Text = "Mostrar datos";
+            btnMostrarDatosCliente.UseVisualStyleBackColor = true;
+            // 
+            // txtIDEliminarCliente
+            // 
+            txtIDEliminarCliente.Location = new Point(943, 122);
+            txtIDEliminarCliente.Name = "txtIDEliminarCliente";
+            txtIDEliminarCliente.Size = new Size(100, 23);
+            txtIDEliminarCliente.TabIndex = 61;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(879, 127);
+            label21.Name = "label21";
+            label21.Size = new Size(53, 15);
+            label21.TabIndex = 60;
+            label21.Text = "Eliminar:";
+            // 
+            // txtIDModificarCliente
+            // 
+            txtIDModificarCliente.Location = new Point(946, 66);
+            txtIDModificarCliente.Name = "txtIDModificarCliente";
+            txtIDModificarCliente.Size = new Size(100, 23);
+            txtIDModificarCliente.TabIndex = 59;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(879, 40);
+            label23.Name = "label23";
+            label23.Size = new Size(175, 15);
+            label23.TabIndex = 58;
+            label23.Text = "Ingrese ID del cliente que desea:";
             // 
             // concesionariaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1125, 661);
+            ClientSize = new Size(1163, 669);
+            Controls.Add(label19);
+            Controls.Add(label20);
+            Controls.Add(btnEliminarCliente);
+            Controls.Add(btnModificarCliente);
+            Controls.Add(btnMostrarDatosCliente);
+            Controls.Add(txtIDEliminarCliente);
+            Controls.Add(label21);
+            Controls.Add(txtIDModificarCliente);
+            Controls.Add(label23);
+            Controls.Add(label22);
+            Controls.Add(label18);
+            Controls.Add(btnEliminarVehiculo);
+            Controls.Add(btnModificarVehiculo);
+            Controls.Add(btnMostrarDatosVehiculo);
+            Controls.Add(txtIDEliminarVehiculo);
+            Controls.Add(label17);
+            Controls.Add(txtIDModificarVehiculo);
+            Controls.Add(label16);
             Controls.Add(btnRealizarVenta);
             Controls.Add(textBox1);
             Controls.Add(dateTimePicker1);
@@ -457,8 +647,8 @@
             Controls.Add(lblTituloVentas);
             Controls.Add(lblTituloCliente);
             Controls.Add(lblTituloVehiculos);
-            MaximumSize = new Size(1141, 700);
-            MinimumSize = new Size(1141, 700);
+            MaximumSize = new Size(1179, 708);
+            MinimumSize = new Size(1179, 708);
             Name = "concesionariaForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Concesionaria de autos";
@@ -511,5 +701,23 @@
         private DateTimePicker dateTimePicker1;
         private TextBox textBox1;
         private Button btnRealizarVenta;
+        private Label label16;
+        private TextBox txtIDModificarVehiculo;
+        private TextBox txtIDEliminarVehiculo;
+        private Label label17;
+        private Button btnMostrarDatosVehiculo;
+        private Button btnModificarVehiculo;
+        private Button btnEliminarVehiculo;
+        private Label label18;
+        private Label label22;
+        private Label label19;
+        private Label label20;
+        private Button btnEliminarCliente;
+        private Button btnModificarCliente;
+        private Button btnMostrarDatosCliente;
+        private TextBox txtIDEliminarCliente;
+        private Label label21;
+        private TextBox txtIDModificarCliente;
+        private Label label23;
     }
 }
