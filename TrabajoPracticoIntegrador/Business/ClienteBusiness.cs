@@ -37,6 +37,7 @@
             {
                 using (var trx = new TransactionScope())
                 {
+                    validateCreateClienteFields(cliente);
                     clienteDAO.Create(cliente);
                     trx.Complete();
                 }
@@ -76,6 +77,34 @@
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        private void validateCreateClienteFields(Cliente cliente)
+        {
+            if (string.IsNullOrWhiteSpace(cliente.Nombre))
+            {
+                throw new Exception("El campo 'Nombre' es obligatorio.");
+            }
+
+            if (string.IsNullOrWhiteSpace(cliente.Apellido))
+            {
+                throw new Exception("El campo 'Apellido' es obligatorio.");
+            }
+
+            if (string.IsNullOrWhiteSpace(cliente.DNI))
+            {
+                throw new Exception("El campo 'DNI' es obligatorio.");
+            }
+
+            if (!string.IsNullOrWhiteSpace(cliente.Email) && !cliente.Email.Contains("@"))
+            {
+                throw new Exception("El campo 'Email' no tiene un formato válido.");
+            }
+
+            if (!string.IsNullOrWhiteSpace(cliente.Telefono) && cliente.Telefono.Length < 6)
+            {
+                throw new Exception("El campo 'Teléfono' no parece válido.");
             }
         }
     }

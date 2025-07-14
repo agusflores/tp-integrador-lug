@@ -2,6 +2,7 @@
 {
     using Data;
     using Entity;
+    using Mapper;
     using System.Transactions;
 
     public class VentaBusiness
@@ -13,6 +14,24 @@
             try
             {
                 return ventaDAO.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<VentaDTO> GetAllDTOs()
+        {
+            try
+            {
+                List<Venta> ventas = ventaDAO.GetAll();
+                List<VentaDTO> ventasDTO = new List<VentaDTO>();
+                foreach (Venta venta in ventas)
+                {
+                    ventasDTO.Add(VentaMapper.MapEntityToDTO(venta));
+                }
+                return ventasDTO;
             }
             catch (Exception ex)
             {

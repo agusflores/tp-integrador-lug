@@ -35,5 +35,15 @@ namespace Mapper
 
             return ventas;
         }
+
+        public static Venta MapDTOToEntity(VentaDTO dto)
+        {
+            return new Venta(dto.Vehiculo, dto.Cliente, dto.FechaVenta, dto.PrecioFinal, dto.Observacion);
+        }
+
+        public static VentaDTO MapEntityToDTO(Venta entity)
+        {
+            return new VentaDTO(entity);
+        }
     }
 }

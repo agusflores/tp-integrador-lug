@@ -64,9 +64,9 @@
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
-            richTextBox1 = new RichTextBox();
-            dateTimePicker1 = new DateTimePicker();
-            textBox1 = new TextBox();
+            txtObservaciones = new RichTextBox();
+            dtpFechaVenta = new DateTimePicker();
+            txtPrecioFinalVenta = new TextBox();
             btnRealizarVenta = new Button();
             label16 = new Label();
             txtIDModificarVehiculo = new TextBox();
@@ -405,27 +405,27 @@
             label15.TabIndex = 36;
             label15.Text = "Observaciones:";
             // 
-            // richTextBox1
+            // txtObservaciones
             // 
-            richTextBox1.Location = new Point(112, 581);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(272, 47);
-            richTextBox1.TabIndex = 37;
-            richTextBox1.Text = "";
+            txtObservaciones.Location = new Point(112, 581);
+            txtObservaciones.Name = "txtObservaciones";
+            txtObservaciones.Size = new Size(272, 47);
+            txtObservaciones.TabIndex = 37;
+            txtObservaciones.Text = "";
             // 
-            // dateTimePicker1
+            // dtpFechaVenta
             // 
-            dateTimePicker1.Location = new Point(183, 449);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 38;
+            dtpFechaVenta.Location = new Point(183, 449);
+            dtpFechaVenta.Name = "dtpFechaVenta";
+            dtpFechaVenta.Size = new Size(200, 23);
+            dtpFechaVenta.TabIndex = 38;
             // 
-            // textBox1
+            // txtPrecioFinalVenta
             // 
-            textBox1.Location = new Point(183, 478);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(200, 23);
-            textBox1.TabIndex = 39;
+            txtPrecioFinalVenta.Location = new Point(183, 478);
+            txtPrecioFinalVenta.Name = "txtPrecioFinalVenta";
+            txtPrecioFinalVenta.Size = new Size(200, 23);
+            txtPrecioFinalVenta.TabIndex = 39;
             // 
             // btnRealizarVenta
             // 
@@ -435,6 +435,7 @@
             btnRealizarVenta.TabIndex = 40;
             btnRealizarVenta.Text = "Realizar venta";
             btnRealizarVenta.UseVisualStyleBackColor = true;
+            btnRealizarVenta.Click += btnRealizarVenta_Click;
             // 
             // label16
             // 
@@ -658,9 +659,9 @@
             Controls.Add(txtIDModificarVehiculo);
             Controls.Add(label16);
             Controls.Add(btnRealizarVenta);
-            Controls.Add(textBox1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(richTextBox1);
+            Controls.Add(txtPrecioFinalVenta);
+            Controls.Add(dtpFechaVenta);
+            Controls.Add(txtObservaciones);
             Controls.Add(label15);
             Controls.Add(label14);
             Controls.Add(label13);
@@ -748,9 +749,9 @@
         private Label label13;
         private Label label14;
         private Label label15;
-        private RichTextBox richTextBox1;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox1;
+        private RichTextBox txtObservaciones;
+        private DateTimePicker dtpFechaVenta;
+        private TextBox txtPrecioFinalVenta;
         private Button btnRealizarVenta;
         private Label label16;
         private TextBox txtIDModificarVehiculo;
