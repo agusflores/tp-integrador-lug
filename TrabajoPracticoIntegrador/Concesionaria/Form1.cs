@@ -1,7 +1,7 @@
 namespace Concesionaria
 {
     using Business;
-    using Entity
+    using Entity;
     public partial class concesionariaForm : Form
     {
         private VehiculoBusiness vehiculoBusiness = new VehiculoBusiness();
@@ -9,6 +9,7 @@ namespace Concesionaria
         private VentaBusiness ventaBusiness = new VentaBusiness();
 
         int selectedVehicleID = 0;
+        int selectedClientID = 0;
 
         public concesionariaForm()
         {
@@ -147,7 +148,13 @@ namespace Concesionaria
                     throw new Exception("Debe ingresar un ID de un Vehiculo válido antes de eliminar.");
                 }
                 int vehiculoID = Convert.ToInt32(txtIDEliminarVehiculo.Text);
+
                 Vehiculo selectedVehicle = vehiculoBusiness.GetById(vehiculoID);
+
+                if (selectedVehicle == null)
+                {
+                    throw new Exception($"El vehiculo con el ID {vehiculoID} no existe.");
+                }
 
                 vehiculoBusiness.Delete(selectedVehicle.Id);
             }
@@ -171,6 +178,15 @@ namespace Concesionaria
             txtPrecioVehiculo.Text = string.Empty;
         }
 
+        private void cleanClientFields()
+        {
+            txtNombreCliente.Text = string.Empty;
+            txtApellidoCliente.Text = string.Empty;
+            txtDniCliente.Text = string.Empty;
+            txtTelefonoCliente.Text = string.Empty;
+            txtEmailCliente.Text = string.Empty;
+        }
+
         private void fillVehicleFields(Vehiculo selectedVehicle)
         {
             txtMarcaVehiculo.Text = selectedVehicle.Marca;
@@ -179,6 +195,124 @@ namespace Concesionaria
             txtKilometrajeVehiculo.Text = selectedVehicle.Kilometraje.ToString();
             txtPatenteVehiculo.Text = selectedVehicle.Patente;
             txtPrecioVehiculo.Text = selectedVehicle.Precio.ToString();
+        }
+
+        private void btnRegistrarCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Cliente nuevoCliente = new Cliente()
+                {
+                    Nombre = txtNombreCliente.Text,
+                    Apellido = txtApellidoCliente.Text,
+                    DNI = txtDniCliente.Text,
+                    Telefono = txtTelefonoCliente.Text,
+                    Email = txtEmailCliente.Text,
+                };
+
+                clienteBusiness.Create(nuevoCliente);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error");
+            }
+            finally
+            {
+                cleanClientFields();
+                updateClientesDatagridView();
+            }
+        }
+
+        private void btnMostrarDatosCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int clienteID = Convert.ToInt32(txtIDModificarCliente.Text);
+                Cliente selectedClient = clienteBusiness.GetById(clienteID);
+
+                if (selectedClient == null)
+                {
+                    throw new Exception($"El cliente con el ID {clienteID} no existe.");
+                }
+
+                fillClientFields(selectedClient);
+                selectedClientID = selectedClient.Id;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error");
+            }
+        }
+
+        private void fillClientFields(Cliente selectedClient)
+        {
+            txtNombreCliente.Text = selectedClient.Nombre;
+            txtApellidoCliente.Text = selectedClient.Apellido;
+            txtDniCliente.Text = selectedClient.DNI;
+            txtTelefonoCliente.Text = selectedClient.Telefono;
+            txtEmailCliente.Text = selectedClient.Email;
+        }
+
+        private void btnModificarCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (selectedClientID == 0)
+                {
+                    throw new Exception("Debe ingresar un ID de un Cliente válido y mostrar los datos antes de modificar.");
+                }
+
+                Cliente clienteAModificar = new Cliente()
+                {
+                    Id = selectedClientID,
+                    Nombre = txtNombreCliente.Text,
+                    Apellido = txtApellidoCliente.Text,
+                    DNI = txtDniCliente.Text,
+                    Telefono = txtTelefonoCliente.Text,
+                    Email = txtEmailCliente.Text,
+
+                };
+                clienteBusiness.Update(clienteAModificar);
+                selectedClientID = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error");
+            }
+            finally
+            {
+                cleanClientFields();
+                updateClientesDatagridView();
+            }
+        }
+
+        private void btnEliminarCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtIDEliminarCliente.Text == string.Empty)
+                {
+                    throw new Exception("Debe ingresar un ID de un Cliente válido antes de eliminar.");
+                }
+                int clienteID = Convert.ToInt32(txtIDEliminarCliente.Text);
+
+                Cliente selectedClient = clienteBusiness.GetById(clienteID);
+
+                if (selectedClient == null)
+                {
+                    throw new Exception($"El cliente con el ID {selectedClient} no existe.");
+                }
+
+                clienteBusiness.Delete(selectedClient.Id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error");
+            }
+            finally
+            {
+                updateClientesDatagridView();
+            }
         }
     }
 }

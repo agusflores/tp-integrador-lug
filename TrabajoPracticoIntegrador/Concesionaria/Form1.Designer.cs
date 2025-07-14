@@ -48,11 +48,11 @@
             txtPatenteVehiculo = new TextBox();
             txtKilometrajeVehiculo = new TextBox();
             txtPrecioVehiculo = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
+            txtEmailCliente = new TextBox();
+            txtTelefonoCliente = new TextBox();
+            txtDniCliente = new TextBox();
+            txtApellidoCliente = new TextBox();
+            txtNombreCliente = new TextBox();
             btnRegistrarCliente = new Button();
             label8 = new Label();
             label9 = new Label();
@@ -270,40 +270,40 @@
             txtPrecioVehiculo.Size = new Size(100, 23);
             txtPrecioVehiculo.TabIndex = 19;
             // 
-            // textBox8
+            // txtEmailCliente
             // 
-            textBox8.Location = new Point(769, 148);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
-            textBox8.TabIndex = 32;
+            txtEmailCliente.Location = new Point(769, 148);
+            txtEmailCliente.Name = "txtEmailCliente";
+            txtEmailCliente.Size = new Size(100, 23);
+            txtEmailCliente.TabIndex = 32;
             // 
-            // textBox9
+            // txtTelefonoCliente
             // 
-            textBox9.Location = new Point(769, 119);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(100, 23);
-            textBox9.TabIndex = 31;
+            txtTelefonoCliente.Location = new Point(769, 119);
+            txtTelefonoCliente.Name = "txtTelefonoCliente";
+            txtTelefonoCliente.Size = new Size(100, 23);
+            txtTelefonoCliente.TabIndex = 31;
             // 
-            // textBox10
+            // txtDniCliente
             // 
-            textBox10.Location = new Point(769, 90);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(100, 23);
-            textBox10.TabIndex = 30;
+            txtDniCliente.Location = new Point(769, 90);
+            txtDniCliente.Name = "txtDniCliente";
+            txtDniCliente.Size = new Size(100, 23);
+            txtDniCliente.TabIndex = 30;
             // 
-            // textBox11
+            // txtApellidoCliente
             // 
-            textBox11.Location = new Point(769, 61);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(100, 23);
-            textBox11.TabIndex = 29;
+            txtApellidoCliente.Location = new Point(769, 61);
+            txtApellidoCliente.Name = "txtApellidoCliente";
+            txtApellidoCliente.Size = new Size(100, 23);
+            txtApellidoCliente.TabIndex = 29;
             // 
-            // textBox12
+            // txtNombreCliente
             // 
-            textBox12.Location = new Point(769, 32);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(100, 23);
-            textBox12.TabIndex = 28;
+            txtNombreCliente.Location = new Point(769, 32);
+            txtNombreCliente.Name = "txtNombreCliente";
+            txtNombreCliente.Size = new Size(100, 23);
+            txtNombreCliente.TabIndex = 28;
             // 
             // btnRegistrarCliente
             // 
@@ -313,6 +313,7 @@
             btnRegistrarCliente.TabIndex = 27;
             btnRegistrarCliente.Text = "Registrar cliente";
             btnRegistrarCliente.UseVisualStyleBackColor = true;
+            btnRegistrarCliente.Click += btnRegistrarCliente_Click;
             // 
             // label8
             // 
@@ -541,6 +542,7 @@
             btnEliminarCliente.TabIndex = 64;
             btnEliminarCliente.Text = "Eliminar";
             btnEliminarCliente.UseVisualStyleBackColor = true;
+            btnEliminarCliente.Click += btnEliminarCliente_Click;
             // 
             // btnModificarCliente
             // 
@@ -550,6 +552,7 @@
             btnModificarCliente.TabIndex = 63;
             btnModificarCliente.Text = "Modificar";
             btnModificarCliente.UseVisualStyleBackColor = true;
+            btnModificarCliente.Click += btnModificarCliente_Click;
             // 
             // btnMostrarDatosCliente
             // 
@@ -559,6 +562,7 @@
             btnMostrarDatosCliente.TabIndex = 62;
             btnMostrarDatosCliente.Text = "Mostrar datos";
             btnMostrarDatosCliente.UseVisualStyleBackColor = true;
+            btnMostrarDatosCliente.Click += btnMostrarDatosCliente_Click;
             // 
             // txtIDEliminarCliente
             // 
@@ -661,11 +665,11 @@
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label7);
-            Controls.Add(textBox8);
-            Controls.Add(textBox9);
-            Controls.Add(textBox10);
-            Controls.Add(textBox11);
-            Controls.Add(textBox12);
+            Controls.Add(txtEmailCliente);
+            Controls.Add(txtTelefonoCliente);
+            Controls.Add(txtDniCliente);
+            Controls.Add(txtApellidoCliente);
+            Controls.Add(txtNombreCliente);
             Controls.Add(btnRegistrarCliente);
             Controls.Add(label8);
             Controls.Add(label9);
@@ -728,11 +732,11 @@
         private TextBox txtPatenteVehiculo;
         private TextBox txtKilometrajeVehiculo;
         private TextBox txtPrecioVehiculo;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
-        private TextBox textBox12;
+        private TextBox txtEmailCliente;
+        private TextBox txtTelefonoCliente;
+        private TextBox txtDniCliente;
+        private TextBox txtApellidoCliente;
+        private TextBox txtNombreCliente;
         private Button btnRegistrarCliente;
         private Label label8;
         private Label label9;
