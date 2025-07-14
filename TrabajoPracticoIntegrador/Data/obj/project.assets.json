@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0": []
   },
   "packageFolders": {
     "C:\\Users\\Agustin Flores\\.nuget\\packages\\": {}
@@ -13,26 +13,26 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Concesionaria\\Concesionaria.csproj",
-      "projectName": "Concesionaria",
-      "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Concesionaria\\Concesionaria.csproj",
+      "projectUniqueName": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\Data.csproj",
+      "projectName": "Data",
+      "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Agustin Flores\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Concesionaria\\obj\\",
+      "outputPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Agustin Flores\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net8.0-windows"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -43,8 +43,8 @@
       }
     },
     "frameworks": {
-      "net8.0-windows7.0": {
-        "targetAlias": "net8.0-windows",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -59,9 +59,6 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
-            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"

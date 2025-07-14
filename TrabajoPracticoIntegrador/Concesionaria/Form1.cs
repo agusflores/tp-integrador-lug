@@ -1,8 +1,8 @@
 namespace Concesionaria
 {
-    public partial class Form1 : Form
+    public partial class concesionariaForm : Form
     {
-        public Form1()
+        public concesionariaForm()
         {
             InitializeComponent();
         }
