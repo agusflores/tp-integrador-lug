@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Entity/1.0.0": {
+      "type": "project",
+      "path": "../Entity/Entity.csproj",
+      "msbuildProject": "../Entity/Entity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Entity >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Agustin Flores\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

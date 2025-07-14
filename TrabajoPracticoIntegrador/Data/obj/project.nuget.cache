@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "XPukoM3gsVCIaLMO4Js+XsFNBn5i8OdRar1nvTBSKFj9QOpIwgXuMXXwXGApuxfszvEBbYA4AGuE4CO0vcROhA==",
+  "dgSpecHash": "vywtrclu+l5mZwJtj51XExci+9hvemsMSNiLbYnkUAYtD3Ln77Yf9RUyOVCf9rGvywn3XDhmZwLlUSfr9pU32Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\Data.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Agustin Flores\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Agustin Flores\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Agustin Flores\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Agustin Flores\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Agustin Flores\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.7\\system.configuration.configurationmanager.9.0.7.nupkg.sha512",
+    "C:\\Users\\Agustin Flores\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512",
+    "C:\\Users\\Agustin Flores\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.7\\system.diagnostics.eventlog.9.0.7.nupkg.sha512",
+    "C:\\Users\\Agustin Flores\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.7\\system.security.cryptography.protecteddata.9.0.7.nupkg.sha512"
+  ],
   "logs": []
 }

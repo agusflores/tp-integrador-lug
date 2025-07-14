@@ -27,7 +27,197 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Agustin Flores\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Agustin Flores\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj"
+              },
+              "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Mapper\\Mapper.csproj": {
+                "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Mapper\\Mapper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj",
+        "projectName": "Entity",
+        "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Agustin Flores\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Agustin Flores\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Mapper\\Mapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Mapper\\Mapper.csproj",
+        "projectName": "Mapper",
+        "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Mapper\\Mapper.csproj",
+        "packagesPath": "C:\\Users\\Agustin Flores\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Mapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Agustin Flores\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Agustin Flores\\source\\repos\\tp-integrador-lug\\TrabajoPracticoIntegrador\\Entity\\Entity.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
