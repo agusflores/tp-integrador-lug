@@ -38,7 +38,7 @@
             {
                 using (var trx = new TransactionScope())
                 {
-                    //ValidateFields(entity);
+                    validateCreateVehicleFields(vehiculo);
                     vehiculoDAO.Create(vehiculo);
                     trx.Complete();
                 }
@@ -55,7 +55,7 @@
             {
                 using (var trx = new TransactionScope())
                 {
-                    //ValidateFields(student);
+                    validateCreateVehicleFields(vehiculo);
                     vehiculoDAO.Update(vehiculo);
                     trx.Complete();
                 }
@@ -79,6 +79,39 @@
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        private void validateCreateVehicleFields(Vehiculo vehiculo)
+        {
+            if (string.IsNullOrWhiteSpace(vehiculo.Marca))
+            {
+                throw new Exception("El campo 'Marca' es obligatorio.");
+            }
+
+            if (string.IsNullOrWhiteSpace(vehiculo.Modelo))
+            {
+                throw new Exception("El campo 'Modelo' es obligatorio.");
+            }
+
+            if (vehiculo.Anio <= 0)
+            {
+                throw new Exception("El campo 'Año' debe ser un número válido y mayor a cero.");
+            }
+
+            if (vehiculo.Kilometraje < 0)
+            {
+                throw new Exception("El campo 'Kilometraje' no puede ser negativo.");
+            }
+
+            if (vehiculo.Precio <= 0)
+            {
+                throw new Exception("El campo 'Precio' debe ser mayor a cero.");
+            }
+
+            if (string.IsNullOrWhiteSpace(vehiculo.Patente))
+            {
+                throw new Exception("El campo 'Patente' es obligatorio.");
             }
         }
     }

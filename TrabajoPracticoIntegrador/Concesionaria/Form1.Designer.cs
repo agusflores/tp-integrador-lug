@@ -86,6 +86,10 @@
             label21 = new Label();
             txtIDModificarCliente = new TextBox();
             label23 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            cmbClientes = new ComboBox();
+            cmbVehiculos = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvVehiculos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvVentas).BeginInit();
@@ -112,7 +116,7 @@
             // lblTituloVentas
             // 
             lblTituloVentas.AutoSize = true;
-            lblTituloVentas.Location = new Point(656, 449);
+            lblTituloVentas.Location = new Point(656, 419);
             lblTituloVentas.Name = "lblTituloVentas";
             lblTituloVentas.Size = new Size(95, 15);
             lblTituloVentas.TabIndex = 2;
@@ -126,7 +130,7 @@
             dgvClientes.Location = new Point(656, 265);
             dgvClientes.Name = "dgvClientes";
             dgvClientes.ReadOnly = true;
-            dgvClientes.Size = new Size(465, 171);
+            dgvClientes.Size = new Size(465, 151);
             dgvClientes.TabIndex = 3;
             // 
             // dgvVehiculos
@@ -137,7 +141,7 @@
             dgvVehiculos.Location = new Point(21, 265);
             dgvVehiculos.Name = "dgvVehiculos";
             dgvVehiculos.ReadOnly = true;
-            dgvVehiculos.Size = new Size(465, 171);
+            dgvVehiculos.Size = new Size(465, 151);
             dgvVehiculos.TabIndex = 4;
             // 
             // dgvVentas
@@ -145,10 +149,10 @@
             dgvVentas.AllowUserToAddRows = false;
             dgvVentas.AllowUserToDeleteRows = false;
             dgvVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvVentas.Location = new Point(656, 467);
+            dgvVentas.Location = new Point(656, 437);
             dgvVentas.Name = "dgvVentas";
             dgvVentas.ReadOnly = true;
-            dgvVentas.Size = new Size(465, 182);
+            dgvVentas.Size = new Size(465, 220);
             dgvVentas.TabIndex = 5;
             // 
             // lblAgregarVehiculo
@@ -222,6 +226,7 @@
             btnAgregarVehiculo.TabIndex = 13;
             btnAgregarVehiculo.Text = "Agregar Vehiculo";
             btnAgregarVehiculo.UseVisualStyleBackColor = true;
+            btnAgregarVehiculo.Click += btnAgregarVehiculo_Click;
             // 
             // txtMarcaVehiculo
             // 
@@ -366,7 +371,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(21, 449);
+            label7.Location = new Point(19, 419);
             label7.Name = "label7";
             label7.Size = new Size(79, 15);
             label7.TabIndex = 33;
@@ -375,7 +380,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(21, 483);
+            label13.Location = new Point(21, 449);
             label13.Name = "label13";
             label13.Size = new Size(41, 15);
             label13.TabIndex = 34;
@@ -384,7 +389,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(21, 517);
+            label14.Location = new Point(21, 477);
             label14.Name = "label14";
             label14.Size = new Size(69, 15);
             label14.TabIndex = 35;
@@ -393,7 +398,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(21, 553);
+            label15.Location = new Point(19, 581);
             label15.Name = "label15";
             label15.Size = new Size(87, 15);
             label15.TabIndex = 36;
@@ -401,29 +406,29 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(114, 553);
+            richTextBox1.Location = new Point(112, 581);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(272, 68);
+            richTextBox1.Size = new Size(272, 47);
             richTextBox1.TabIndex = 37;
             richTextBox1.Text = "";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(186, 483);
+            dateTimePicker1.Location = new Point(183, 449);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 38;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(186, 517);
+            textBox1.Location = new Point(183, 478);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(200, 23);
             textBox1.TabIndex = 39;
             // 
             // btnRealizarVenta
             // 
-            btnRealizarVenta.Location = new Point(11, 627);
+            btnRealizarVenta.Location = new Point(8, 634);
             btnRealizarVenta.Name = "btnRealizarVenta";
             btnRealizarVenta.Size = new Size(375, 23);
             btnRealizarVenta.TabIndex = 40;
@@ -470,6 +475,7 @@
             btnMostrarDatosVehiculo.TabIndex = 45;
             btnMostrarDatosVehiculo.Text = "Mostrar datos";
             btnMostrarDatosVehiculo.UseVisualStyleBackColor = true;
+            btnMostrarDatosVehiculo.Click += btnMostrarDatosVehiculo_Click;
             // 
             // btnModificarVehiculo
             // 
@@ -479,6 +485,7 @@
             btnModificarVehiculo.TabIndex = 46;
             btnModificarVehiculo.Text = "Modificar";
             btnModificarVehiculo.UseVisualStyleBackColor = true;
+            btnModificarVehiculo.Click += btnModificarVehiculo_Click;
             // 
             // btnEliminarVehiculo
             // 
@@ -488,6 +495,7 @@
             btnEliminarVehiculo.TabIndex = 47;
             btnEliminarVehiculo.Text = "Eliminar";
             btnEliminarVehiculo.UseVisualStyleBackColor = true;
+            btnEliminarVehiculo.Click += btnEliminarVehiculo_Click;
             // 
             // label18
             // 
@@ -584,11 +592,49 @@
             label23.TabIndex = 58;
             label23.Text = "Ingrese ID del cliente que desea:";
             // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(21, 505);
+            label24.Name = "label24";
+            label24.Size = new Size(47, 15);
+            label24.TabIndex = 67;
+            label24.Text = "Cliente:";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(21, 542);
+            label25.Name = "label25";
+            label25.Size = new Size(55, 15);
+            label25.TabIndex = 69;
+            label25.Text = "Vehiculo:";
+            // 
+            // cmbClientes
+            // 
+            cmbClientes.FormattingEnabled = true;
+            cmbClientes.Location = new Point(183, 507);
+            cmbClientes.Name = "cmbClientes";
+            cmbClientes.Size = new Size(201, 23);
+            cmbClientes.TabIndex = 70;
+            // 
+            // cmbVehiculos
+            // 
+            cmbVehiculos.FormattingEnabled = true;
+            cmbVehiculos.Location = new Point(182, 542);
+            cmbVehiculos.Name = "cmbVehiculos";
+            cmbVehiculos.Size = new Size(201, 23);
+            cmbVehiculos.TabIndex = 71;
+            // 
             // concesionariaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1163, 669);
+            Controls.Add(cmbVehiculos);
+            Controls.Add(cmbClientes);
+            Controls.Add(label25);
+            Controls.Add(label24);
             Controls.Add(label19);
             Controls.Add(label20);
             Controls.Add(btnEliminarCliente);
@@ -652,6 +698,7 @@
             Name = "concesionariaForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Concesionaria de autos";
+            Load += concesionariaForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvVehiculos).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvVentas).EndInit();
@@ -719,5 +766,9 @@
         private Label label21;
         private TextBox txtIDModificarCliente;
         private Label label23;
+        private Label label24;
+        private Label label25;
+        private ComboBox cmbClientes;
+        private ComboBox cmbVehiculos;
     }
 }

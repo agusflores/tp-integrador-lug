@@ -17,7 +17,7 @@
                     Modelo = dr["Modelo"].ToString(),
                     Anio = Convert.ToInt32(dr["Anio"].ToString()),
                     Kilometraje = Convert.ToInt32(dr["Kilometraje"].ToString()),
-                    Precio = Convert.ToDecimal(dr["Precio"].ToString()),
+                    Precio = Convert.ToDouble(dr["Precio"].ToString()),
                     Patente = dr["Patente"].ToString()
                 };
 
