@@ -40,3 +40,7 @@ La concesionaria se basa en tres entidades principales:
 * Configurar cadena de conexión en DbConnectionString.
 * Ejecutar métodos CRUD a través de la capa Business para gestionar la concesionaria.
 * Adaptar o ampliar según necesidades específicas (e.g., interfaz gráfica o API REST).
+
+# Manual de usuario 
+
+https://docs.google.com/document/d/1x7timrmGc5h1kbSqIhUDaCmPoxstXpkeeQN92mkVscc/edit?usp=sharing
